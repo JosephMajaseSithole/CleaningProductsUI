@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleaningProducts.UI", "CleaningProducts.UI\CleaningProducts.UI.csproj", "{44DF4AE4-0510-49AE-ACD2-DB1E42851BEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44DF4AE4-0510-49AE-ACD2-DB1E42851BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44DF4AE4-0510-49AE-ACD2-DB1E42851BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44DF4AE4-0510-49AE-ACD2-DB1E42851BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44DF4AE4-0510-49AE-ACD2-DB1E42851BEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52019A6F-1E2B-40C5-8008-F123B36BB0AE}
+	EndGlobalSection
+EndGlobal

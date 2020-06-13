@@ -1,0 +1,48 @@
+﻿@model CleaningProducts.UI.Models.Supplier
+
+
+@{
+	ViewBag.Title = "Search Supplier";
+}
+
+<div class="page-header">Search Supplier</div>
+
+<div class="row input-group text-center">
+	<div class="col-md-4 col-xs-4 col-sm-4 text-right">
+		@Html.LabelFor(m => m.Name)
+	</div>
+	<div class="col-md-7 col-sm-7 col-xs-7">
+		@Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+	</div>
+	<div class="col-md-1 col-sm-1 col-xs-1">
+		<input id="searchSupplier" class="btn btn-primary" type="submit" value="Search" />
+	</div>
+</div>
+
+<hr />
+
+<div id="searchedSupplier"></div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$("#searchSupplier").click(function () {
+			var companyName = $("#Name").val();
+
+			$.ajax({
+			type: "GET",
+			url: '@Url.Action("_SearchedSupplier", "Home")',
+			data: { companyName: companyName },
+				success: function (data) {
+					$("#Name").val("");
+					$("#searchedSupplier").html(data);
+				},
+				error: function (jqXHR, textStatus, errorThrown) {
+					alert(textStatus + " - " + errorThrown);
+				}
+			});
+
+		});
+	});
+</script>
+
