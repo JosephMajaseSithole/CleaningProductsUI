@@ -5,6 +5,8 @@ namespace CleaningProducts.UI.Models
 	public class Supplier
 	{
 		public int Id { get; set; }
+
+		[Display(Name = "Company Code")]
 		public string Code { get; set; }
 
 		[Display(Name = "Company Name")]
